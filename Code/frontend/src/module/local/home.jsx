@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "./Layout";
+import { Link } from "react-router-dom";  // 👈 at the top of Home.jsx
 
 const Home = () => {
   return (
@@ -45,12 +46,15 @@ const Home = () => {
             
             {/* Action Buttons */}
             <div className="space-y-4">
-              <button className="w-full bg-green-200 border-4 border-black p-6 shadow-[8px_8px_0px_0px_#000] active:shadow-[4px_4px_0px_0px_#000] active:translate-x-1 active:translate-y-1 transition-all hover:bg-green-300">
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-3xl">📢</span>
-                  <span className="text-xl font-black text-gray-800">Report Incident</span>
-                </div>
-              </button>
+              <Link
+  to="/report-incident"
+  className="block w-full bg-green-200 border-4 border-black p-6 shadow-[8px_8px_0px_0px_#000] active:shadow-[4px_4px_0px_0px_#000] active:translate-x-1 active:translate-y-1 transition-all hover:bg-green-300"
+>
+  <div className="flex items-center justify-center space-x-3">
+    <span className="text-3xl">📢</span>
+    <span className="text-xl font-black text-gray-800">Report Incident</span>
+  </div>
+</Link>
 
               <button className="w-full bg-pink-200 border-4 border-black p-6 shadow-[8px_8px_0px_0px_#000] active:shadow-[4px_4px_0px_0px_#000] active:translate-x-1 active:translate-y-1 transition-all hover:bg-pink-300">
                 <div className="flex items-center justify-center space-x-3">

@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./module/local/home"; // 👈 your home.jsx path
+import Home from "./module/local/home";
+import ReportIncident from "./module/local/report" 
+import profile from "./module/local/profile" 
 
 const Landing = () => {
   return (
@@ -26,11 +28,10 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        {/* Landing page */}
         <Route path="/" element={<Landing />} />
-
-        {/* Local Home page */}
         <Route path="/home" element={<Home />} />
+        <Route path="/report-incident" element={<ReportIncident />} /> {/* 👈 new route */}
+        <Route path="/profile" element={<Profile />} /> {/* 👈 new route */}
       </Routes>
     </Router>
   );
