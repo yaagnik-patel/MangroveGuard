@@ -37,7 +37,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/rankings"
+              to="/reward"
               className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 transition-colors"
             >
               <span className="text-xl">📊</span>
@@ -75,7 +75,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to="/rankings"
+            to="/reward"
             className="flex flex-col items-center p-2 hover:bg-gray-100 transition-colors"
           >
             <span className="text-2xl mb-1">📊</span>

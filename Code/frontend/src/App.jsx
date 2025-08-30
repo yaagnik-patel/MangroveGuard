@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./module/local/home";
 import ReportIncident from "./module/local/report";
 import Profile from "./module/local/profile"; // ✅ Corrected
+import Rewards from "./module/local/rewards";
 
 const Landing = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/report-incident" element={<ReportIncident />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/reward" element={<Rewards/>} />
       </Routes>
     </Router>
   );
